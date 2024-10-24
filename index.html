@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vantigo E-Store Vendor Onboarding</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f9f9f9;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 50px auto;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 30px;
+        }
+
+        h2, h3 {
+            color: #2c3e50;
+        }
+
+        label {
+            font-weight: 600;
+            display: block;
+            margin-bottom: 8px;
+            margin-top: 20px;
+            color: #34495e;
+        }
+
+        input, select, textarea {
+            width: 100%;
+            padding: 12px;
+            margin: 8px 0;
+            border-radius: 6px;
+            border: 1px solid #bdc3c7;
+            box-sizing: border-box;
+            font-size: 15px;
+            background-color: #ecf0f1;
+            transition: border-color 0.3s;
+        }
+
+        input:focus, select:focus, textarea:focus {
+            border-color: #3498db;
+        }
+
+        textarea {
+            resize: vertical;
+            height: 100px;
+        }
+
+        button {
+            background-color: #3498db;
+            color: white;
+            padding: 15px 20px;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 16px;
+            font-weight: 600;
+            margin-top: 20px;
+        }
+
+        button:hover {
+            background-color: #2980b9;
+        }
+
+        .section-divider {
+            border-top: 2px solid #ecf0f1;
+            margin-top: 40px;
+        }
+
+        .footer {
+            text-align: center;
+            margin-top: 30px;
+            color: #7f8c8d;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h2>Vantigo E-Store Vendor Onboarding Form</h2>
+<form id="vendorOnboardingForm" action="https://script.google.com/macros/s/AKfycbxuwQee7447kPf6_Gb64kGbDf_-5--Rbxeq5kkSbjSeI4znqM58tmHToNiZavO5wrwP/exec" method="POST">
+
+        <h3>1. Business Details</h3>
+
+        <label for="businessName">Business Name</label>
+        <input type="text" id="businessName" name="businessName" required>
+
+        <label for="officeTel">Office Telephone</label>
+        <input type="tel" id="officeTel" name="officeTel">
+
+        <label for="officePhone">Office Phone</label>
+        <input type="tel" id="officePhone" name="officePhone">
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="businessAddress1">Business Address Line 1</label>
+        <input type="text" id="businessAddress1" name="businessAddress1">
+
+        <label for="businessAddress2">Business Address Line 2</label>
+        <input type="text" id="businessAddress2" name="businessAddress2">
+
+        <label for="businessAddress3">Business Address Line 3</label>
+        <input type="text" id="businessAddress3" name="businessAddress3">
+
+        <label for="state">State/U.T</label>
+        <input type="text" id="state" name="state">
+
+        <label for="district">District</label>
+        <input type="text" id="district" name="district">
+
+        <label for="city">City/Town/Village</label>
+        <input type="text" id="city" name="city">
+
+        <label for="pinCode">Pin/Post Code</label>
+        <input type="text" id="pinCode" name="pinCode">
+
+        <label for="businessStructure">Business Structure</label>
+        <select id="businessStructure" name="businessStructure">
+    <option value="sole_proprietorship">Sole Proprietorship</option>
+    <option value="partnership">Partnership</option>
+    <option value="llp">Limited Liability Partnership (LLP)</option>
+    <option value="private_ltd">Private Limited Company</option>
+    <option value="public_ltd">Public Limited Company</option>
+    <option value="section_8">Section 8</option>
+    <option value="opc">One Person Company</option>
+    <option value="trust">Trust</option>
+</select>
+
+        <label for="gstin">GSTIN (if applicable)</label>
+        <input type="text" id="gstin" name="gstin">
+
+        <label for="shopLicense">Shop/Establishment License (if applicable)</label>
+        <input type="text" id="shopLicense" name="shopLicense">
+
+        <label for="fssai">FSSAI License (for food products)</label>
+        <input type="text" id="fssai" name="fssai">
+
+        <label for="companyPan">Company PAN No</label>
+        <input type="text" id="companyPan" name="companyPan">
+
+        <label for="warehouseDetails">Warehouse Details (if applicable)</label>
+        <textarea id="warehouseDetails" name="warehouseDetails"></textarea>
+
+        <label for="refundPolicy">Return and Refund Policy</label>
+        <textarea id="refundPolicy" name="refundPolicy"></textarea>
+
+        <label for="shippingProcess">Shipping Process</label>
+        <select id="shippingProcess" name="shippingProcess">
+            <option value="self">Self</option>
+            <option value="platform">Platform</option>
+        </select>
+
+        <label for="customerSupport">Customer Support Contact Info</label>
+        <textarea id="customerSupport" name="customerSupport"></textarea>
+
+        <div class="section-divider"></div>
+
+        <h3>2. Owner/Representative Address</h3>
+
+        <label for="ownerName">Name</label>
+        <input type="text" id="ownerName" name="ownerName" required>
+
+        <label for="maidenName">Maiden Name</label>
+        <input type="text" id="maidenName" name="maidenName">
+
+        <label for="fatherSpouseName">Father/Spouse Name</label>
+        <input type="text" id="fatherSpouseName" name="fatherSpouseName">
+
+        <label for="dob">Date of Birth</label>
+        <input type="date" id="dob" name="dob">
+
+        <label for="gender">Gender</label>
+        <select id="gender" name="gender">
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+        </select>
+
+        <label for="citizenship">Citizenship</label>
+        <input type="text" id="citizenship" name="citizenship" value="Indian" readonly>
+
+        <label for="residentialStatus">Residential Status</label>
+        <input type="text" id="residentialStatus" name="residentialStatus" value="Resident Individual" readonly>
+
+        <div class="section-divider"></div>
+
+        <h3>Proof of Identity and Address</h3>
+
+        <label for="passport">Passport Number</label>
+        <input type="text" id="passport" name="passport">
+
+        <label for="passportExpiry">Passport Expiry</label>
+        <input type="date" id="passportExpiry" name="passportExpiry">
+
+        <label for="voterId">Voter ID</label>
+        <input type="text" id="voterId" name="voterId">
+
+        <label for="aadhaar">Aadhaar</label>
+        <input type="text" id="aadhaar" name="aadhaar">
+
+        <label for="drivingLicense">Driving License</label>
+        <input type="text" id="drivingLicense" name="drivingLicense">
+
+        <label for="dlExpiry">Driving License Expiry</label>
+        <input type="date" id="dlExpiry" name="dlExpiry">
+
+        <div class="section-divider"></div>
+
+        <h3>Bank Account Details</h3>
+
+        <label for="accountHolderName">Account Holder Name</label>
+        <input type="text" id="accountHolderName" name="accountHolderName" required>
+
+        <label for="accountNumber">Account Number</label>
+        <input type="text" id="accountNumber" name="accountNumber" required>
+
+        <label for="bankName">Bank Name</label>
+        <input type="text" id="bankName" name="bankName">
+
+        <label for="branch">Branch</label>
+        <input type="text" id="branch" name="branch">
+
+        <label for="ifsc">IFSC Code</label>
+        <input type="text" id="ifsc" name="ifsc">
+
+        <label for="pan">PAN</label>
+        <input type="text" id="pan" name="pan">
+
+        <div class="section-divider"></div>
+
+        <h3>Contact Details</h3>
+
+        <label for="telOff">Tel. (Off)</label>
+        <input type="tel" id="telOff" name="telOff">
+
+        <label for="telRes">Tel. (Res)</label>
+        <input type="tel" id="telRes" name="telRes">
+
+        <label for="mobile">Mobile</label>
+        <input type="tel" id="mobile" name="mobile">
+
+        <label for="emailContact">Email</label>
+        <input type="email" id="emailContact" name="emailContact">
+
+        <div class="section-divider"></div>
+
+        <h3>Applicant Declaration</h3>
+        <p>I hereby declare that the details furnished above are true and correct to the best of my knowledge/belief, and I undertake to inform you of any changes therein immediately.</p>
+        <label for="remarks">Remarks</label>
+        <textarea id="remarks" name="remarks"></textarea>
+
+        <label for="declarationDate">Declaration Date</label>
+        <input type="date" id="declarationDate" name="declarationDate" required>
+
+        <button type="submit">Submit</button>
+    </form>
+
+    <div class="footer">
+        <p>&copy; 2024 Vantigo E Com Solutions Pvt. Ltd. All Rights Reserved.</p>
+    </div>
+</div>
+
+</body>
+</html>
